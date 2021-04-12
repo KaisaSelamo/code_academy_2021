@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./StylingWithCss.css";
+
 function StylingWithCss(props) {
   return (
-    <form>
+    <form id="styling-with-css">
       <div>
-        <div>
+        <div className="section">
           <h3>Billing Address</h3>
           <div>
             <label htmlFor="fullname">Full Name</label>
@@ -32,7 +34,7 @@ function StylingWithCss(props) {
           </div>
         </div>
 
-        <div>
+        <div className="section">
           <h3>Payment</h3>
           <div>
             <label htmlFor="cardType">Select Card</label>
