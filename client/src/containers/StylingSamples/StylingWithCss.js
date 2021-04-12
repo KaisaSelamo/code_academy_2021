@@ -66,7 +66,7 @@ function StylingWithCss(props) {
               <label htmlFor="cardExpYear">Exp Year</label>
               <input type="number" name="cardExpYear" placeholder="2020" />
             </div>
-            <div className="input-group sevction">
+            <div className="input-group section">
               <label htmlFor="cardCvv">CVV</label>
               <input type="text" name="cardCvv" placeholder="123" />
             </div>
