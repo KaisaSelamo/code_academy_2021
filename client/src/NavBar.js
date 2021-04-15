@@ -1,14 +1,10 @@
 import React from "react";
-// Link takaa sen, että päästään oikealle sivulle ja pysytään siellä 
-// muuten palaa etusivulle 
-// viittaus react routeriin
 import { Link } from "react-router-dom";
 
-function Home(props) {
+export default function NavBar(props) {
   return (
-    <div>
-      <h1>Code Academy Joensuu 2020</h1>
-      <ol>
+    <div className="nav-bar">
+      <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -18,9 +14,7 @@ function Home(props) {
         <li>
           <Link to="/cars">Cars</Link>
         </li>
-      </ol>
+      </ul>
     </div>
   );
 }
-
-export default Home;
