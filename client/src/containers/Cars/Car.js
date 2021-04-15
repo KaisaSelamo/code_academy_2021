@@ -6,8 +6,8 @@ export default function Car(props) {
     return (
         <Col>
             <div make={make} className="car rounded-circle text-center">
-            {model}
+                {model}
             </div>
       </Col>
-    )
+    );
 }
