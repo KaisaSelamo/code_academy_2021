@@ -29,6 +29,7 @@
       "id": 6,
       "make": "ford",
       "model": "T"
+<<<<<<< HEAD
     },
     {
       "id": 7,
@@ -39,6 +40,8 @@
       "make": "ford",
       "model": "Sierra",
       "id": 8
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
     }
   ]
 }

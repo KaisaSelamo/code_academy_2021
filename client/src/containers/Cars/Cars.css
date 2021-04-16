@@ -10,31 +10,26 @@
   transition: 0.5s ease-in-out;
   position: relative;
 }
-
 .car:hover {
   transform: scale(1.25);
 }
-
 .car[make="ford"] {
   background-color: blue;
   color: white;
 }
-
 .car[make="skoda"] {
   background-color: purple;
   color: white;
 }
-
 .car[make="volvo"] {
   background-color: green;
   color: white;
 }
-
 .car[make="honda"] {
   background-color: silver;
 }
 
-.car-button-delete {
+.btn.car-button-delete {
   font-size: 0.5em;
   padding: 0.2em;
   line-height: 0.5;

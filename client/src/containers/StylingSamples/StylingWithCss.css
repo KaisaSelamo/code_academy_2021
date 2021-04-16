@@ -1,17 +1,24 @@
 #styling-with-css {
   background-color: rgb(244, 244, 244);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 #styling-with-css .section-container {
   display: flex;
   font-size: 15px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 #styling-with-css .section {
   flex: 1;
   min-width: 0;
   padding: 0 1em;
 }
+<<<<<<< HEAD
 
 #styling-with-css .section .section-container {
   margin: 0 -1em;
@@ -20,12 +27,24 @@
   margin-bottom: 1em;
 }
 
+=======
+#styling-with-css .section .section-container {
+  margin: 0 -1em;
+}
+
+#styling-with-css .input-group {
+  margin-bottom: 1em;
+}
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 #styling-with-css label {
   display: block;
   margin-bottom: 0.5em;
   white-space: nowrap;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 #styling-with-css input,
 #styling-with-css select {
   width: 100%;

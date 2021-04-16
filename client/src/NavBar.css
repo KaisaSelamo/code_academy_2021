@@ -6,7 +6,12 @@
   padding: 0;
   display: flex;
 }
+<<<<<<< HEAD
 ​ .nav-bar li {
+=======
+
+.nav-bar li {
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
   padding: 0.5em 1em;
 }
 .nav-bar a,

@@ -6,7 +6,6 @@ import Home from "./containers/Home";
 import StylingSamples from "./containers/StylingSamples/StylingSamples";
 import Cars from "./containers/Cars/Cars";
 import NavBar from "./NavBar";
-import "./NavBar.css";
 
 // Router oltava mahdollisimman korkealla tasolla
 // switch exact viittaa täydelliseen polkuun

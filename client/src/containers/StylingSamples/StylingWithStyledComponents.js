@@ -1,16 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
+<<<<<<< HEAD
 // errorin käsittely Antin koodissa esimerkkinä jossain kohtaa...
 
 // käytetään backstickejä, luodaan div-tyyppinen elementti
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 const SectionContainer = styled.div`
   display: flex;
   font-size: 15px;
 `;
+<<<<<<< HEAD
 
 // jokainen suora lapsi perii jotakin > * jne.
 // muuten perii muotoilut SectioContainerilta
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 const SubSectionContainer = styled(SectionContainer)`
   margin: 0 -1em;
   > * {
@@ -24,24 +30,37 @@ const Section = styled.div`
   min-width: 0;
   padding: 0 1em;
 `;
+<<<<<<< HEAD
 
 const InputGroup = styled.div`
   margin-bottom: 1em;
 `;
 
+=======
+const InputGroup = styled.div`
+  margin-bottom: 1em;
+  ${(props) => props.error && "color: red;"}
+`;
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 const Label = styled.label`
   display: block;
   margin-bottom: 0.5em;
   white-space: nowrap;
 `;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 const Input = styled.input`
   width: 100%;
   font-size: 1em;
   padding: 0.5em 1em;
   box-sizing: border-box;
 `;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 const Select = styled.select`
   width: 100%;
   font-size: 1em;
@@ -55,7 +74,11 @@ function StylingWithStyledComponents(props) {
       <SectionContainer>
         <Section>
           <h3>Billing Address</h3>
+<<<<<<< HEAD
           <InputGroup>
+=======
+          <InputGroup error="Virhe!!!">
+>>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
             <Label htmlFor="fullname">Full Name</Label>
             <Input type="text" name="fullname" placeholder="Maisa Mallikas" />
           </InputGroup>
