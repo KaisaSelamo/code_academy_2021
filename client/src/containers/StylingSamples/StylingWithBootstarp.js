@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import { Form, FormGroup, Input, Label, Row, Col } from "reactstrap";
-=======
 import { Form, FormGroup, Label, Input, Row, Col } from "reactstrap";
->>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
 import { FaUser, FaEnvelope, FaRegAddressCard, FaCity } from "react-icons/fa";
 
 function StylingWithBootsrap(props) {
@@ -48,13 +44,8 @@ function StylingWithBootsrap(props) {
                 <Label htmlFor="zip">Zip</Label>
                 <Input type="text" name="zip" placeholder="80110" />
               </FormGroup>
-<<<<<<< HEAD
-            </Col> 
-            </Row>
-=======
             </Col>
           </Row>
->>>>>>> 5d90e30baa20f1ccebb2a9df60ec554d0f121789
         </Col>
 
         <Col>
