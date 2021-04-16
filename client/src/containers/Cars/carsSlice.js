@@ -12,6 +12,14 @@ export const addCar = createAsyncThunk("cars/addCar", async (car, thunkAPI) => {
     body: JSON.stringify(car),
   }).then((response) => response.json());
 });
+export const deleteCar = createAsyncThunk(
+  "cars/deleteCar",
+  async (id, thunkAPI) => {
+    return fetch(`/api/cars/${id}`, {
+      method: "DELETE",
+    }).then(() => id);
+  }
+);
 
 export const deleteCar = createAsyncThunk(
   "cars/deleteCar",

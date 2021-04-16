@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import AddCar from "./AddCar";
 import Car from "./Car";
 import "./Cars.css";
-import { getCars,deleteCar } from "./carsSlice";
+import { getCars, deleteCar } from "./carsSlice";
 
 export default function Cars(props) {
   const { carList, loading, error } = useSelector((state) => state.cars);
