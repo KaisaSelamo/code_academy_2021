@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Home(props) {
+import "./NavBar.css";
+
+export default function NavBar(props) {
   return (
-    <div>
-      <h1>Code Academy Joensuu 2020</h1>
-      <ol>
+    <div className="nav-bar">
+      <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -15,12 +16,7 @@ function Home(props) {
         <li>
           <Link to="/cars">Cars</Link>
         </li>
-        <li>
-          <Link to="/chart">Chart</Link>
-        </li>
-      </ol>
+      </ul>
     </div>
   );
 }
-
-export default Home;

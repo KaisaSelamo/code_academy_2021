@@ -5,6 +5,7 @@ import Home from "./containers/Home";
 import StylingSamples from "./containers/StylingSamples/StylingSamples";
 import Cars from "./containers/Cars/Cars";
 import NavBar from "./NavBar";
+import Chart from "./containers/Chart/Chart";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/cars">
             <Cars />
+          </Route>
+          <Route path="/chart">
+            <Chart />
           </Route>
         </Switch>
       </Router>
