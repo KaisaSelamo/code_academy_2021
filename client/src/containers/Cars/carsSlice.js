@@ -13,6 +13,15 @@ export const addCar = createAsyncThunk("cars/addCar", async (car, thunkAPI) => {
   }).then((response) => response.json());
 });
 
+export const deleteCar = createAsyncThunk(
+  "cars/deleteCar",
+    async (id, thunkAPI) => {
+    return fetch(`/api/cars/${id}`,{
+      method: "DELETE",
+    }).then(() => id);
+  }
+);
+
 export const carsSlice = createSlice({
   name: "cars",
   initialState: {
@@ -21,7 +30,12 @@ export const carsSlice = createSlice({
     error: undefined,
   },
   reducers: {
-    y: (state) => {},
+    clearCarList: (state) => {
+      return {
+        ...state,
+        carList: [],
+      };
+    },
   },
   extraReducers: {
     [getCars.pending]: (state, action) => {
@@ -52,9 +66,15 @@ export const carsSlice = createSlice({
         carList: [...state.carList, action.payload],
       };
     },
+    [deleteCar.fulfilled]: (state, action) => {
+      return {
+        ...state,
+        carList: state.carList.filter((car) => car.id !== action.payload),
+      };
+    },
   },
 });
 
-export const { y } = carsSlice.actions;
+export const { clearCarList } = carsSlice.actions;
 
 export default carsSlice.reducer;
