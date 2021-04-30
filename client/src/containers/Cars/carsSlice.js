@@ -20,6 +20,7 @@ export const deleteCar = createAsyncThunk(
     }).then(() => id);
   }
 );
+<<<<<<< HEAD
 
 export const deleteCar = createAsyncThunk(
   "cars/deleteCar",
@@ -29,6 +30,8 @@ export const deleteCar = createAsyncThunk(
     }).then(() => id);
   }
 );
+=======
+>>>>>>> fef7b50ba071329125f46f492ed65f74fca7d6dd
 
 export const carsSlice = createSlice({
   name: "cars",
