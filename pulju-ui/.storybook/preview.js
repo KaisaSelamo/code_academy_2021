@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import { ThemeProvider } from "styled-components";
 import theme from "../src/theme";
->>>>>>> fef7b50ba071329125f46f492ed65f74fca7d6dd
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -12,9 +9,6 @@ export const parameters = {
       date: /Date$/,
     },
   },
-<<<<<<< HEAD
-}
-=======
 };
 
 export const decorators = [
@@ -24,4 +18,3 @@ export const decorators = [
     </ThemeProvider>
   ),
 ];
->>>>>>> fef7b50ba071329125f46f492ed65f74fca7d6dd
