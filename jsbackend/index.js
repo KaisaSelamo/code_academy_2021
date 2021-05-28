@@ -1,33 +1,18 @@
-const express = require("express");
+import express from "express";
+import bodyParser from "body-parser";
+
 const app = express();
 const port = 3000;
 
-app.get("/", (req, res) => {
-  const {
-    headers: { cookie },
-    params,
-    query,
-  } = req;
-  console.log({ cookie, params, query });
-  res.setHeader("Set-Cookie", "trackerId=tosi_salainen_koodi");
-  res.send("Hello World!");
-});
+app.use(bodyParser.json());
 
+import SampleController from "./SampleController.js";
+import FruitsController from "./fruits/FruitsController.js";
+import CarsController from "./cars/CarsController.js";
 
-app.get("/Chunks", (req, res) => {
-    res.header("transfer-encoding", "chunked");
-    res.set("Content-Type", "text/json");
-    const interval = setInterval(() => res.write("A"), 1000);
-    setTimeout(() => {
-      clearInterval(interval);
-      res.end();
-    }, 10000);
-  });
-
-app.get("/Fruits", (req, res) => {
-  const fruits = [{ type: "apple", name: "Golden" }];
-  res.json(fruits);
-});
+SampleController(app);
+FruitsController(app);
+CarsController(app);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
