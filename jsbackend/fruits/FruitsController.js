@@ -1,4 +1,5 @@
 import { secure } from "../AuthController.js";
+import FruitsRepository from "./FruitsRepository.js";
 
 const fruits = [{ id: 1, type: "apple", name: "Golden" }];
 
